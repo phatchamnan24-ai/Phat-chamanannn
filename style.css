@@ -1,0 +1,371 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  background-color: #1a1a1a;
+  color: #fff;
+  position: sticky;
+  top: 0;
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 0.95rem;
+}
+
+header nav a:hover {
+  color: #f39c12;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 10%;
+  background: linear-gradient(135deg, #2c3e50, #bdc3c7);
+  color: white;
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+.book-cover-placeholder {
+  width: 220px;
+  height: 320px;
+  background-color: #34495e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+  font-weight: bold;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #f39c12;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #e67e22;
+}
+
+.books-section, .about-section, .contact-section {
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.books-section h2, .about-section h2, .contact-section h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+/* Slider & View Book Button Styles */
+.book-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px !important;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15) !important;
+}
+
+.view-btn {
+  background-color: #2c3e50;
+  border: none;
+  transition: background-color 0.2s;
+}
+
+.view-btn:hover {
+  background-color: #f39c12;
+  color: white !important;
+}
+
+/* រៀបចំទីតាំងប៊ូតុងព្រួញឆ្វេងស្តាំកុំឱ្យជាន់លើសៀវភៅ */
+.carousel-control-prev {
+  left: -20px;
+}
+.carousel-control-next {
+  right: -20px;
+}
+
+/* សម្រាប់អេក្រង់ទូរស័ព្ទដៃ៖ ឱ្យបង្ហាញម្តង ១ក្បាល ហើយអូសបានយ៉ាងរលូន */
+@media (max-width: 768px) {
+  .carousel-control-prev, .carousel-control-next {
+    display: none; /* លាក់ប៊ូតុងព្រួញលើទូរស័ព្ទដើម្បីកុំឱ្យចង្អៀត ព្រោះអាចប្រើម្រាមដៃអូស (Swipe) បាន */
+  }
+  .carousel-inner {
+    overflow-x: auto;
+    display: flex;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 15px;
+  }
+  .carousel-item {
+    display: block;
+    margin-right: 0;
+    flex: 0 0 100%;
+  }
+  .carousel-item .row {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+  .carousel-item .col {
+    scroll-snap-align: start;
+    flex: 0 0 85%; /* បង្ហាញទំហំកាតសៀវភៅ ៨៥% នៃអេក្រង់ទូរស័ព្ទ */
+  }
+}
+
+.about-section p {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+.contact-section form {
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-section input, .contact-section textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #1a1a1a;
+  color: white;
+  font-size: 0.9rem;
+}
+/* About Section Styles */
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: left;
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.about-image img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #f39c12;
+}
+
+.img-placeholder {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #666;
+  border: 4px solid #f39c12;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text h3 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.education {
+  color: #e67e22;
+  margin-bottom: 15px;
+  font-size: 1.05rem;
+}
+
+.description {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.7;
+}
+
+.translate-btn {
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  transition: 0.2s;
+}
+
+.translate-btn:hover {
+  background-color: #f39c12;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* ប្រើ Inter សម្រាប់អង់គ្លេស និង Kantumruy Pro សម្រាប់ខ្មែរ */
+  font-family: 'Khmer OS Kangrey', 'Khmer OS Kangrey', sans-serif;
+}
+
+body {
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.8; /* បង្កើនគម្លាតបន្ទាត់បន្តិច ដើម្បីឱ្យអក្សរខ្មែរងាយស្រួលមើល */
+}
+
+/* កំណត់ Font ពិសេសសម្រាប់ចំណងជើង ដើម្បីឱ្យមើលទៅកាន់តែស្អាត */
+h1, h2, h3, h4, .logo {
+  font-family: 'Khmer OS Kangrey', 'Khmer OS Kangrey', sans-serif;
+  letter-spacing: 0.5px;
+
+}
+/* Social Media Links Styles */
+.social-links {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  border-radius: 30px;
+  color: white;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.social-icon i {
+  font-size: 1.2rem;
+}
+
+/* ពណ៌តាម Brand នីមួយៗ */
+.telegram {
+  background-color: #0088cc;
+}
+.telegram:hover {
+  background-color: #006699;
+  transform: translateY(-3px);
+}
+
+.instagram {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+.instagram:hover {
+  opacity: 0.9;
+  transform: translateY(-3px);
+}
+
+.facebook {
+  background-color: #1877f2;
+}
+.facebook:hover {
+  background-color: #145dbf;
+  transform: translateY(-3px);
+}
+
+/* Custom Bootstrap Social Buttons */
+.btn-telegram {
+  background-color: #0088cc;
+  border: none;
+  transition: transform 0.2s;
+}
+.btn-telegram:hover {
+  background-color: #006699;
+  transform: translateY(-3px);
+  color: white;
+}
+
+.btn-instagram {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  border: none;
+  transition: transform 0.2s;
+}
+.btn-instagram:hover {
+  opacity: 0.9;
+  transform: translateY(-3px);
+  color: white;
+}
+
+.btn-facebook {
+  background-color: #1877f2;
+  border: none;
+  transition: transform 0.2s;
+}
+.btn-facebook:hover {
+  background-color: #145dbf;
+  transform: translateY(-3px);
+  color: white;
+}

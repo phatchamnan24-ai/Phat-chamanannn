@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    <!-- Bootstrap 5 CSS -->
+  <link href="https://jsdelivr.net" rel="stylesheet">
+   <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://jsdelivr.net">
+
+    <!-- Google Fonts for Khmer and English -->
+       <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cloudflare.com">
+  <link rel="preconnect" href="https://googleapis.com">
+  <link rel="preconnect" href="https://gstatic.com" crossorigin>
+  <link href="https://googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..900;1,100..900&family=Siemreap&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alex River - Author Portfolio & Bookstore</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+  <!-- Navigation Bar -->
+  <header>
+    <div class="logo">ALEX RIVER</div>
+    <nav>
+      <a href="#hero">Home</a>
+      <a href="#books">Books</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="hero-content col-4">
+      <h1>Stories That Stay With You</h1>
+      <p>Welcome to the official portfolio and bookstore of author Alex River. Explore published novels, short stories, and upcoming releases.</p>
+      
+    </div>
+    <div class="hero-image">
+      <section id="about" class="about-section">
+    <h2>About the Author / Developer</h2>
+    
+    <div class="about-container">
+      <!-- រូបភាពម្ចាស់ Web (ដាក់រូបភាពរបស់អ្នកឈ្មោះ profile.jpg ក្នុង folder ជាមួយគ្នា) -->
+      <div class="about-image">
+        <img src="img/n.jpg" alt="Phat Chamnan" onerror="this.style.display='none'; document.getElementById('image-placeholder').style.display='flex';">
+        <div id="image-placeholder" class="img-placeholder" style="display:none;">Your Photo</div>
+      </div>
+      
+      
+      <!-- ព័ត៌មានផ្ទាល់ខ្លួន -->
+      <div class="about-text">
+        <button id="translate-btn" class="translate-btn" onclick="toggleLanguage()">Translate to Khmer</button>
+        
+        <div id="bio-en">
+          <h3>Hello, I am <strong>Phat Chamnan</strong></h3>
+          <p class="education"><strong>Education:</strong> Studying Software Development at National Technical Training Institute (NTTI)</p>
+          <p class="description">Welcome to my book store and portfolio. As a software development student at NTTI, I combine my passion for technology and creativity to build digital solutions and share stories. Explore my work and feel free to reach out!</p>
+        </div>
+                <!-- Social Media Links -->
+                <!-- Social Media Links (Using Bootstrap Icons) -->
+        
+        
+        
+        <div id="bio-kh" style="display: none;">
+          <h3> ផាត ចំណាន</h3>
+          <p class="education"><strong>ការសិក្សា:</strong> និស្សិតជំនាញ Software Development នៅវិទ្យាស្ថានជាតិបណ្តុះបណ្តាលបច្ចេកទេស (NTTI)</p>
+          <p class="description">សូមស្វាគមន៍មកកាន់គេហទំព័រលក់សៀវភៅ និងជា Portfolio ផ្ទាល់ខ្លួនរបស់ខ្ញុំ។ ក្នុងនាមជានិស្សិតផ្នែកអភិវឌ្ឍន៍កម្មវិធី (Software Development) នៅ NTTI ខ្ញុំបានរួមបញ្ចូលគ្នានូវចំណូលចិត្តបច្ចេកវិទ្យា និងការច្នៃប្រឌិត ដើម្បីបង្កើតដំណោះស្រាយឌីជីថល និងចែករំលែករឿងរ៉ាវនានា។ សូមរីករាយទស្សនាស្នាដៃរបស់ខ្ញុំ!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+    </div>
+  </section>
+
+  <!-- Books / Portfolio Section -->
+    <!-- Books / Portfolio Section with Responsive Slider -->
+  <section id="books" class="books-section container py-5">
+    <h2 class="text-center mb-5"><i class="bi bi-journal-text text-warning"></i> Published Works</h2>
+    
+    <!-- Bootstrap Carousel -->
+    <div id="bookCarousel" class="carousel slide" data-bs-ride="false">
+      <div class="carousel-inner">
+        
+        <!-- ផ្ទាំងស្លាយទី ១ (សៀវភៅ ១ ដល់ ៣) -->
+        <div class="carousel-item active">
+          <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center px-5">
+            <!-- សៀវភៅ ១ -->
+            <div class="col">
+              <div class="book-card h-100 shadow-sm border-0 bg-white p-3 rounded-3 text-center">
+                <div class="cover-art mb-3 d-flex align-items-center justify-content-center rounded bg-light text-secondary"><i class="bi bi-moon-stars fs-1"></i></div>
+                <h3 class="fs-5 fw-bold">The Silent Horizon</h3>
+                <p class="genre text-muted small">Sci-Fi / Mystery</p>
+                <p class="price text-success fw-bold">$14.99</p>
+        
+                  
+                  <a href="#books" id="hero-view-btn"​​ class="btn">Explore Books</a>
+                    
+
+              </div>
+            </div>
+            <!-- សៀវភៅ ២ -->
+            <div class="col">
+              <div class="book-card h-100 shadow-sm border-0 bg-white p-3 rounded-3 text-center">
+                <div class="cover-art mb-3 d-flex align-items-center justify-content-center rounded bg-light text-secondary"><i class="bi bi-tree fs-1"></i></div>
+                <h3 class="fs-5 fw-bold">Echoes of Eden</h3>
+                <p class="genre text-muted small">Historical Fiction</p>
+                <p class="price text-success fw-bold">$12.50</p>
+
+                <a href="#books" id="hero-view-btn"​​ class="btn">Echoes of Eden</a>
+                    <!-- ================= ផ្ទាំងទំព័រថ្មីសម្រាប់គម្រោង Echoes of Eden Project ================= -->
+    <div id="echoes-project-page" class="container py-5 mt-4" style="display: none;">
+      <div class="bg-white p-5 rounded-4 shadow-sm text-center max-width-800 mx-auto">
+        <div class="text-warning mb-3"><i class="bi bi-book-half fs-1"></i></div>
+        <h2 class="fw-bold text-dark mb-3">Echoes of Eden - Interactive Novel Project</h2>
+        <p class="text-muted">នេះជាទំព័រគម្រោងពិសេសដែលបង្កើតឡើងបន្ទាប់ពីចុចលើសៀវភៅ Echoes of Eden ដើម្បីបង្ហាញពីប្រព័ន្ធអានសៀវភៅបែបឌីជីថល។</p>
+        
+        <div class="row text-start g-4 my-4 justify-content-center">
+          <div class="col-md-5 bg-light p-3 rounded-3 mx-2">
+            <h5><i class="bi bi-star-fill text-warning"></i> មុខងារប្រព័ន្ធ (Features)</h5>
+            <ul class="small text-muted ps-3">
+              <li>Audiobook Streaming Integration</li>
+              <li>Bookmark & Highlight Text</li>
+              <li>Dark Mode for Night Readers</li>
+            </ul>
+          </div>
+          <div class="col-md-5 bg-light p-3 rounded-3 mx-2">
+            <h5><i class="bi bi-cpu-fill text-primary"></i> បច្ចេកវិទ្យាប្រើប្រាស់</h5>
+            <ul class="small text-muted ps-3">
+              <li>HTML5 / CSS3 / Bootstrap 5</li>
+              <li>JavaScript (ES6+)</li>
+              <li>Local Storage API</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- ប៊ូតុងសម្រាប់ចុចត្រឡប់មកទំព័រដើមវិញ -->
+        <button id="back-from-echoes-btn" class="btn btn-secondary btn-sm rounded-pill px-4 py-2 fw-bold">
+          <i class="bi bi-arrow-left-circle-fill"></i> Back to Main Store
+        </button>
+      </div>
+    </div>
+
+              </div>
+            </div>
+            <!-- សៀវភៅ ៣ -->
+            <div class="col">
+              <div class="book-card h-100 shadow-sm border-0 bg-white p-3 rounded-3 text-center">
+                <div class="cover-art mb-3 d-flex align-items-center justify-content-center rounded bg-light text-secondary"><i class="bi bi-building fs-1"></i></div>
+                <h3 class="fs-5 fw-bold">Midnight in Paris</h3>
+                <p class="genre text-muted small">Romance / Drama</p>
+                <p class="price text-success fw-bold">$9.99</p>
+
+                <!-- កែត្រង់ប៊ូតុងកណ្តាលរបស់លោក ឱ្យទៅជាបែបនេះ -->
+
+
+                <a href="#books" id="hero-view-btn"​​ class="btn">Explore Books</a>
+              
+              
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ផ្ទាំងស្លាយទី ២ (សៀវភៅ ៤ ដល់ ៦) -->
+        <div class="carousel-item">
+          <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center px-5">
+            <!-- សៀវភៅ ៤ -->
+            <div class="col">
+              <div class="book-card h-100 shadow-sm border-0 bg-white p-3 rounded-3 text-center">
+                <div class="cover-art mb-3 d-flex align-items-center justify-content-center rounded bg-light text-secondary"><i class="bi bi-cpu fs-1"></i></div>
+                <h3 class="fs-5 fw-bold">Code & Soul</h3>
+                <p class="genre text-muted small">Cyberpunk / Tech</p>
+                <p class="price text-success fw-bold">$15.00</p>
+                <a href="#books" id="hero-view-btn"​​ class="btn">Explore Books</a>
+              </div>
+            </div>
+            <!-- សៀវភៅ ៥ -->
+            <div class="col">
+              <div class="book-card h-100 shadow-sm border-0 bg-white p-3 rounded-3 text-center">
+                <div class="cover-art mb-3 d-flex align-items-center justify-content-center rounded bg-light text-secondary"><i class="bi bi-compass fs-1"></i></div>
+                <h3 class="fs-5 fw-bold">Lost Compass</h3>
+                <p class="genre text-muted small">Adventure</p>
+                <p class="price text-success fw-bold">$11.99</p>
+                <a href="#books" id="hero-view-btn"​​ class="btn">Explore Books</a>
+              </div>
+            </div>
+            <!-- សៀវភៅ ៦ -->
+            <div class="col">
+              <div class="book-card h-100 shadow-sm border-0 bg-white p-3 rounded-3 text-center">
+                <div class="cover-art mb-3 d-flex align-items-center justify-content-center rounded bg-light text-secondary"><i class="bi bi-shield-shaded fs-1"></i></div>
+                <h3 class="fs-5 fw-bold">The Last Kingdom</h3>
+                <p class="genre text-muted small">Fantasy / Epic</p>
+                <p class="price text-success fw-bold">$18.50</p>
+                <a href="#books" id="hero-view-btn"​​ class="btn">Explore Books</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ប៊ូតុងបញ្ជាឆ្វេង-ស្តាំ (ឆ្វេង / ស្តាំ) -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#bookCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#bookCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Portfolio Section (លាក់ខ្លួនជាមុនសិន) -->
+  <section id="portfolio-section" class="container py-5" style="display: none;">
+    <div class="text-center mb-5">
+      <h2><i class="bi bi-code-square text-warning"></i> Software Projects Portfolio</h2>
+      <p class="text-muted">គម្រោងប្រព័ន្ធកម្មវិធី និងស្នាដៃអភិវឌ្ឍន៍កម្មវិធីរបស់ខ្ញុំនៅវិទ្យាស្ថាន NTTI</p>
+    </div>
+    
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+      <!-- គម្រោងទី ១ -->
+      <div class="col">
+        <div class="card h-100 shadow-sm border-0 project-card bg-white p-4">
+          <div class="project-icon mb-3 text-warning"><i class="bi bi-cart4 fs-1"></i></div>
+          <h3 class="fs-5 fw-bold text-dark">E-Commerce Website</h3>
+          <p class="text-muted small">គម្រោងគេហទំព័រលក់ទំនិញអនឡាញ ដែលមានប្រព័ន្ធគ្រប់គ្រងការកុម្មង់ និងការទូទាត់ប្រាក់យ៉ាងមានសុវត្ថិភាព។</p>
+          <div class="tech-badges mb-3">
+            <span class="badge bg-light text-secondary border">HTML5</span>
+            <span class="badge bg-light text-secondary border">Bootstrap 5</span>
+            <span class="badge bg-light text-secondary border">JavaScript</span>
+          </div>
+          <a href="#" class="btn btn-outline-dark btn-sm rounded-pill"><i class="bi bi-github"></i> View Code</a>
+        </div>
+      </div>
+      
+      <!-- គម្រោងទី ២ -->
+      <div class="col">
+        <div class="card h-100 shadow-sm border-0 project-card bg-white p-4">
+          <div class="project-icon mb-3 text-warning"><i class="bi bi-person-check fs-1"></i></div>
+          <h3 class="fs-5 fw-bold text-dark">Student Management System</h3>
+          <p class="text-muted small">ប្រព័ន្ធគ្រប់គ្រងទិន្នន័យសិស្ស វត្តមាន និងលទ្ធផលសិក្សា ជួយសម្រួលដល់ការងាររដ្ឋបាលនៅក្នុងសាលារៀន។</p>
+          <div class="tech-badges mb-3">
+            <span class="badge bg-light text-secondary border">Java / C#</span>
+            <span class="badge bg-light text-secondary border">MySQL</span>
+          </div>
+          <a href="#" class="btn btn-outline-dark btn-sm rounded-pill"><i class="bi bi-github"></i> View Code</a>
+        </div>
+      </div>
+      
+    </div>
+
+
+
+    
+<!-- ប៊ូតុងសម្រាប់ចុចត្រឡប់មកមើលសៀវភៅវិញ -->
+<div class="text-center mt-4">
+  <button id="back-to-books-btn" class="btn btn-secondary btn-sm rounded-pill px-4 py-2 fw-bold shadow-sm">
+    <i class="bi bi-arrow-left-circle-fill"></i> Back to Books
+  </button>
+</div>
+
+
+  </section>
+
+
+<div class="row">
+    <div class="col">
+  
+  <!-- About Section -->
+    <!-- About Section with Khmer Translation -->
+  
+    <!-- ================= ផ្នែកកន្លែងមេរៀនទំព័រថ្មី (Dynamic Lessons Section) ================= -->
+<section id="lessons-wrapper-section" class="container py-5 mt-4">
+  <div class="bg-white p-5 rounded-4 text-center mx-auto border shadow" style="max-width: 850px; border-radius: 16px;">
+    
+    <!-- ផ្ទាំងទី ១: កន្លែងស្វាគមន៍ (បង្ហាញមុនគេ) -->
+    <div id="lesson-start-screen">
+      <div class="text-warning mb-3"><i class="bi bi-book-half fs-1"></i></div>
+      <h2 class="fw-bold text-dark mb-3">មេរៀនជំនាញ Software Development</h2>
+      <p class="text-muted">ស្វាគមន៍មកកាន់កន្លែងស្វែងរករាល់មេរៀនសំខាន់ៗដែលបានសិក្សានៅវិទ្យាស្ថាន NTTI។ ចុចប៊ូតុងខាងក្រោមដើម្បីចូលទៅកាន់ទំព័រមេរៀន!</p>
+      
+      <!-- ប៊ូតុងចុចទៅលាក់ទំព័រចាស់ទាំងអស់ រួចលោតចេញទំព័រមេរៀនថ្មី -->
+      <button class="btn btn-warning text-white fw-bold rounded-pill px-5 py-3 mt-3 shadow-sm fs-5" onclick="(function(){
+        // លាក់រាល់ផ្នែកចាស់ៗទាំងអស់នៅលើ Website ចោល
+        document.querySelectorAll('header, #hero, #books, .books-section, #projects, .projects-section, #about, .about-section, #contact, .contact-section, footer').forEach(function(el){
+          el.style.display = 'none';
+        });
+        // បើកបង្ហាញផ្ទាំងបញ្ជីមេរៀនថ្មី
+        document.getElementById('lesson-start-screen').style.display = 'none';
+        document.getElementById('lesson-content-screen').style.display = 'block';
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      })()">
+        <i class="bi bi-play-circle-fill"></i> Start Learning
+      </button>
+    </div>
+
+    <!-- ផ្ទាំងទី ២: ទំព័រថ្មីផ្ទុកមេរៀនជាច្រើន (លោតចេញមកក្រោយពេលចុច Start) -->
+    <div id="lesson-content-screen" style="display: none;">
+      <div class="text-warning mb-3"><i class="bi bi-journal-code fs-1"></i></div>
+      <h2 class="fw-bold text-dark mb-3">បញ្ជីមេរៀនទាំងអស់ (Lessons Dashboard)</h2>
+      <p class="text-muted mb-4">នេះជាទំព័រថ្មីស្រឡាងដែលផ្ទុកទៅដោយមេរៀនបច្ចេកវិទ្យា៖</p>
+
+      <!-- ជួរកាតមេរៀន -->
+      <div class="row row-cols-1 row-cols-md-2 g-4 text-start">
+        <div class="col">
+          <div class="p-3 bg-light rounded-3 border h-100">
+            <h5 class="fw-bold text-dark"><i class="bi bi-1-circle-fill text-warning"></i> Introduction to HTML5 & CSS3</h5>
+            <p class="small text-muted mb-0">សិក្សារចនាសម្ព័ន្ធគ្រោងឆ្អឹងរបស់គេហទំព័រ និងការដេគ័រស្ទីលឱ្យមានភាពទាក់ទាញ (Responsive Design)។</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="p-3 bg-light rounded-3 border h-100">
+            <h5 class="fw-bold text-dark"><i class="bi bi-2-circle-fill text-warning"></i> JavaScript Front-End Logic</h5>
+            <p class="small text-muted mb-0">យល់ដឹងពីការប្រើប្រាស់ Variables, Functions, DOM Manipulation និង Events លើ Web Browser។</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="p-3 bg-light rounded-3 border h-100">
+            <h5 class="fw-bold text-dark"><i class="bi bi-3-circle-fill text-warning"></i> Database Management (MySQL)</h5>
+            <p class="small text-muted mb-0">រៀនពីការរចនា Database, Tables និងការប្រើប្រាស់កូដ SQL Queries (CRUD Operations)។</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="p-3 bg-light rounded-3 border h-100">
+            <h5 class="fw-bold text-dark"><i class="bi bi-4-circle-fill text-warning"></i> Object-Oriented Programming (OOP)</h5>
+            <p class="small text-muted mb-0">ស្វែងយល់ពីមូលដ្ឋានគ្រឹះនៃ OOP ដូចជា Classes, Objects, Inheritance ដោយប្រើប្រាស់ភាសា Java/C#។</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ប៊ូតុងសម្រាប់ចុចត្រឡប់មកទំព័រដើមវិញ (បង្ហាញរាល់ទំព័រចាស់មកវិញទាំងអស់) -->
+      <div class="text-center mt-5">
+        <button class="btn btn-secondary btn-sm rounded-pill px-4 py-2 fw-bold shadow-sm" onclick="(function(){
+          // លាក់ផ្ទាំងមេរៀននេះវិញ
+          document.getElementById('lesson-content-screen').style.display = 'none';
+          document.getElementById('lesson-start-screen').style.display = 'block';
+          
+          // បើកបង្ហាញរាល់ផ្នែកចាស់ៗទាំងអស់របស់ Website មកវិញធម្មតា ១០០%
+          document.querySelectorAll('header, #hero, #books, .books-section, #projects, .projects-section, #about, .about-section, #contact, .contact-section, footer').forEach(function(el){
+            el.style.display = 'block';
+          });
+          
+          // រុញអេក្រង់ត្រឡប់ទៅកាន់កន្លែងមេរៀនវិញដោយទន់ភ្លន់
+          document.getElementById('lessons-wrapper-section').scrollIntoView({ behavior: 'smooth' });
+        })()">
+          <i class="bi bi-arrow-left-circle-fill"></i> ត្រឡប់ទៅទំព័រដើមវិញ (Back to Home)
+        </button>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  </section>
+ 
+</div>
+<div class="col">
+
+</div>
+</div>
+
+  <div class="row">
+    <div class="col">
+  
+  <!-- Contact Section -->
+
+    
+    <!-- ជំនួស Link ខាងក្រោមនេះ ជាមួយនឹង Link Formspree ផ្ទាល់ខ្លួនរបស់អ្នក -->
+      <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <h2><i class="bi bi-chat-dots-fill text-warning"></i> Get in Touch</h2>
+    
+    <!-- បានភ្ជាប់ជាមួយ Formspree ID របស់លោក (mwllqgen) រួចរាល់ -->
+    <form id="contact-form" action="https://formspree.io/f/mwllqgen" method="POST">
+      <div class="mb-3 text-start">
+        <label class="form-label fw-bold"><i class="bi bi-person"></i> Name</label>
+        <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+      </div>
+      <div class="mb-3 text-start">
+        <label class="form-label fw-bold"><i class="bi bi-envelope"></i> Email</label>
+        <input type="email" name="_replyto" class="form-control" placeholder="Your Email" required>
+      </div>
+      <div class="mb-3 text-start">
+        <label class="form-label fw-bold"><i class="bi bi-pencil-square"></i> Message</label>
+        <textarea name="message" class="form-control" placeholder="Your Message" rows="4" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-warning text-white fw-bold w-100 py-2">
+        <i class="bi bi-send-fill"></i> Send Message
+      </button>
+     
+      <div class="social-links-bootstrap mt-4 d-flex gap-3 flex-wrap mt-3">
+         
+          <a href="https://t.me/hhqwwwNanfromekhmerside" target="_blank" class="btn btn-telegram d-inline-flex align-items-center ">
+            <i class="bi bi-telegram fs-2"></i>
+          </a>
+          <a href="https://www.instagram.com/nanfromekhmerside?mdxt=cW9jdHk2ODhrMHg3&utm_source=qr" target="_blank" class="btn btn-instagram d-inline-flex align-items-center  ">
+           <i class="bi bi-instagram fs-2"></i>
+          </a>
+          <a href="https://www.facebook.com/share/18o52cSanf/?mibextid=wwXIfr" target="_blank" class="btn btn-facebook d-inline-flex align-items-center ">
+            <i class="bi bi-facebook fs-2 "></i> 
+          </a>
+          
+        </div>
+    </form>
+  </section>
+  
+  </div>
+  <div class="col">
+    
+  </div>
+  </div>
+ 
+
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Alex River. All rights reserved.</p>
+  </footer>
+<script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
+   <!-- Bootstrap 5 JS Bundle with Popper -->  
+    <!-- ================= ផ្ទាំងទំព័រថ្មីសម្រាប់គម្រោង Echoes of Eden Project ================= -->
+<section id="echoes-project-page" class="container py-5 mt-4" style="display: none;">
+  <div class="bg-white p-5 rounded-4 text-center mx-auto border shadow" style="max-width: 800px; border-radius: 16px;">
+    <div class="text-warning mb-3"><i class="bi bi-book-half fs-1"></i></div>
+    <h2 class="fw-bold text-dark mb-3">Echoes of Eden - Interactive Novel Project</h2>
+    <p class="text-muted">នេះជាទំព័រគម្រោងថ្មីស្រឡាង ដែលបង្ហាញពីព័ត៌មានលម្អិតនៃប្រព័ន្ធគ្រប់គ្រង និងអានសៀវភៅបែបឌីជីថល (Digital Reading Platform)។</p>
+    
+    <div class="row text-start g-4 my-4 justify-content-center">
+      <div class="col-md-5 bg-light p-3 rounded-3 mx-2">
+        <h5 class="fw-bold"><i class="bi bi-star-fill text-warning"></i> មុខងារប្រព័ន្ធ (Features)</h5>
+        <ul class="small text-muted ps-3">
+          <li>Audiobook Streaming Integration</li>
+          <li>Bookmark & Highlight Text</li>
+          <li>Dark Mode for Night Readers</li>
+        </ul>
+      </div>
+      <div class="col-md-5 bg-light p-3 rounded-3 mx-2">
+        <h5 class="fw-bold"><i class="bi bi-cpu-fill text-primary"></i> បច្ចេកវិទ្យាប្រើប្រាស់</h5>
+        <ul class="small text-muted ps-3">
+          <li>HTML5 / CSS3 / Bootstrap 5</li>
+          <li>JavaScript (ES6+)</li>
+          <li>Local Storage API</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ប៊ូតុងសម្រាប់ចុចត្រឡប់មកទំព័រដើមវិញ -->
+    <div class="text-center mt-4">
+      <button class="btn btn-secondary btn-sm rounded-pill px-4 py-2 fw-bold" onclick="backToMainStore()">
+        <i class="bi bi-arrow-left-circle-fill"></i> Back to Main Store
+      </button>
+    </div>
+  </div>
+</section>
+  <!-- Bootstrap 5 Bundle with Popper JS (ជួយឱ្យស្លាយ និងប៊ូតុងដំណើរការ) -->
+  <script src="https://jsdelivr.net"></script>
+
+  <!-- ឯកសារ JavaScript ផ្ទាល់ខ្លួនរបស់អ្នក (script.js) -->
+  <script src="script.js"></script>
+
+</body>
+</html>
